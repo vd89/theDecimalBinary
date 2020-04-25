@@ -6,20 +6,17 @@ const inputTwo = document.getElementById('inputTwo')
 const value = document.getElementById('value')
 const swap = document.getElementById('swap')
 
-const toBinary = (n, bin = '') => {
-    if (n <= 1) {
-        bin = n + bin;
-        const ofZero = 8 - bin.length;
-        for (let i = 0; i < ofZero; i++) {
-            bin = '0' + bin;
-        }
-        return bin;
-    } else {
-        bin = Math.floor(n % 2) + bin;
-        return toBinary(Math.floor(n / 2), bin);
-    }
-};
 
+
+const bin = (n) => {
+    return n.toString(2)
+}
+const hex = (n) => {
+    return n.toString(16)
+}
+const oct = (n) => {
+    return n.toString(8)
+}
 function binToDecimal(string) {
     let decimal = +0;
     let bits = +1;
@@ -42,13 +39,24 @@ function calculate() {
     switch (convOne) {
         case 'dec':
             var inpOneValue = inputOne.value
-            inputTwo.value = toBinary(inpOneValue)
+            inputTwo.value = bin(parseFloat(inpOneValue))
             value.innerHTML = `Decimal to Binary value`
             break;
         case 'bin':
             var inpOneValue = inputOne.value
             inputTwo.value = binToDecimal(inpOneValue)
             value.innerHTML = `Binary to Decimal value`
+            break;
+        case 'hex':
+            var inpOneValue = inputOne.value
+            inputTwo.value = hex(parseFloat(inpOneValue))
+            value.innerHTML = `Decimal to Hexadecimal value`
+            break;
+        case 'oct':
+            var inpOneValue = inputOne.value
+            inputTwo.value = oct(parseFloat(inpOneValue))
+            value.innerHTML = `Decimal to Octal value`
+            break;
     
         default:
             break;
