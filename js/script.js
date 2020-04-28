@@ -19,11 +19,9 @@ const calculate = () => {
   switch (selecterVal) {
     case 'dec':
       forDec();
-
       break;
     case 'bin':
       forBin();
-
       break;
     case 'hex':
       forHex();
@@ -40,11 +38,3 @@ const calculate = () => {
 //Event Listeners
 inputOne.addEventListener('input', calculate);
 selecter.addEventListener('change', calculate);
-
-resetOne.addEventListener('reset', () => {
-  selecter.addEventListener('reset');
-  inputOne.addEventListener('reset');
-  hexLab.addEventListener('reset');
-  binLab.addEventListener('reset');
-  octLab.addEventListener('reset');
-});
