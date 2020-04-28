@@ -17,19 +17,18 @@ const hex = (n) => {
 const oct = (n) => {
     return n.toString(8)
 }
-function binToDecimal(string) {
-    let decimal = +0;
-    let bits = +1;
-    for (let i = 0; i < string.length; i++) {
-        let currNum = +(string[string.length - i - 1]);
-        if (currNum === 1) {
-            decimal += bits;
-        }
-        bits *= 2;
-    }
-    return decimal
+
+const binToDec = (n) => {
+    return dec = parseInt(n,2)
 }
 
+const hexToDec = (n) => {
+    return dec = parseInt(n, 16)    
+}
+
+const octToDec = (n) => {
+    return dec = parseInt(n,10)
+}
 
 
 function calculate() {
@@ -39,12 +38,30 @@ function calculate() {
     switch (convOne) {
         case 'dec':
             var inpOneValue = inputOne.value
-            inputTwo.value = bin(parseFloat(inpOneValue))
-            value.innerHTML = `Decimal to Binary value`
+            switch (convTwo) {
+                case 'dec':
+                    inputTwo.value = inputOne.value
+                    value.innerHTML = `Decimal Value for decimal will be same`
+                    break;
+                case 'bin':
+                    inputTwo.value = bin(parseFloat(inpOneValue))                        
+                    value.innerHTML = `Decimal to Binary value`
+                break;
+                case 'hex':
+                    inputTwo.value = hex(parseFloat(inpOneValue))
+                    value.innerHTML = `Decimal To Hexadecimal value`
+                    break;
+                case 'oct':
+                    inputTwo.value = oct(parseFloat(inpOneValue))
+                    value.innerHTML = `Decimal To Octadecimal value`
+                    break;
+                default:
+                    break;
+            }
             break;
         case 'bin':
             var inpOneValue = inputOne.value
-            inputTwo.value = binToDecimal(inpOneValue)
+            inputTwo.value = binToDec(inpOneValue)
             value.innerHTML = `Binary to Decimal value`
             break;
         case 'hex':

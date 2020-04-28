@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Binary to Decimal && Decimal to Binary </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary to Decimal && Decimal to Binary</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Decimal to Binary Calculator</h1>
-    <p>You can convert decimal value to Binary and then from Binary to Decimal</p>
+    <p>
+      You can convert decimal value to Binary and then from Binary to Decimal
+    </p>
     <div class="container">
-        <div class="converter">
-            <select name="" id="converter-one">
-                <option value="dec" selected>Decimal</option>
-                <option value="bin">Binary</option>
-                
-            </select>
-            <input type="number" id="inputOne" placeholder="0" value="">
-        </div>
-        <div class="swap-converter">
-            <button class="btn" id="swap">Swap</button>
-            
-            <div id="value" class="value"></div>
-        </div>
-        <div class="converter">
-            <select name="" id="converter-two">
-                <option value="bin" selected>Binary</option>
-                <option value="dec">Decimal</option>
-               
-            </select>
-            <input type="number" id="inputTwo" placeholder="0">
-        </div>
-    </div>
+      <div class="converter">
+        <select name="" id="converter-one">
+          <option value="dec" selected>Decimal</option>
+          <option value="bin">Binary</option>
+          <option value="hex">Hexadecimal</option>
+          <option value="oct">Octadecimal</option>
+        </select>
+        <input type="number" id="inputOne" placeholder="0" value="" />
+      </div>
+      <div class="swap-converter">
+        <button class="btn" id="swap">Swap</button>
 
-</body>
-<script src="script.js"></script>
+        <div id="value" class="value"></div>
+      </div>
+      <div class="converter">
+        <select name="" id="converter-two">
+          <option value="bin" selected>Binary</option>
+          <option value="dec">Decimal</option>
+          <option value="hex">Hexadecimal</option>
+          <option value="oct">Octadecimal</option>
+        </select>
+        <input type="text" id="inputTwo" placeholder="0" />
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>
