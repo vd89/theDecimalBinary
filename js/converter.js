@@ -46,4 +46,10 @@ const forBin = () => {
     binInputValid(inpOneVal)
     binLab.innerHTML = 'Decimal'
     binOut.innerHTML = binToDec(inpOneVal)
+    hexOut.innerHTML = hex(binToDec(inpOneVal))
+    octOut.innerHTML = oct(binToDec(inpOneVal))
+}
+
+const forHex = () => {
+    
 }

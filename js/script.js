@@ -19,6 +19,9 @@ const calculate = () => {
         case 'bin':
             forBin()
             break
+        case 'hex':
+            forHex()
+            break;
         default:
             break;
     }
