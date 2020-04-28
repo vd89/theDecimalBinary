@@ -23,7 +23,7 @@ const octToDec = (n) => {
 const forDec = () => {
   outPutLab.innerHTML = 'Decimal to other forms of binary';
   let inpOneVal = inputOne.value;
-  // console.log(inpOneVal);
+  binLab.innerHTML = "Binary"
   binOut.innerHTML = bin(parseFloat(inpOneVal));
   octOut.innerHTML = oct(parseFloat(inpOneVal));
   hexOut.innerHTML = hex(parseFloat(inpOneVal));
@@ -87,6 +87,7 @@ const forHex = () => {
   hexValdate(inpOneVal);
   outPutLab.innerHTML = 'Hexadecimal value to other';
   hexLab.innerHTML = 'Decimal';
+  binLab.innerHTML = "Binary"
   hexOut.innerHTML = hexToDec(inpOneVal);
   binOut.innerHTML = bin(hexToDec(inpOneVal));
   octOut.innerHTML = oct(hexToDec(inpOneVal));
@@ -119,6 +120,8 @@ const forOct = () => {
   octValidate(inpOneVal);
   outPutLab.innerHTML = 'Octal value to other';
   octLab.innerHTML = 'Decimal';
+  binLab.innerHTML = "Binary"
+  hexLab.innerHTML = 'Hexadecimal'
   octOut.innerHTML = octToDec(inpOneVal);
   hexOut.innerHTML = hex(octToDec(inpOneVal));
   binOut.innerHTML = bin(octToDec(inpOneVal));
