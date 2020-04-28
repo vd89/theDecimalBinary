@@ -27,6 +27,7 @@ const forDec = () => {
   binOut.innerHTML = bin(parseFloat(inpOneVal));
   octOut.innerHTML = oct(parseFloat(inpOneVal));
   hexOut.innerHTML = hex(parseFloat(inpOneVal));
+  return;
 };
 
 const binInputValid = (n) => {
@@ -47,6 +48,7 @@ const forBin = () => {
   binOut.innerHTML = binToDec(inpOneVal);
   hexOut.innerHTML = hex(binToDec(inpOneVal));
   octOut.innerHTML = oct(binToDec(inpOneVal));
+  return;
 };
 
 const hexValdate = (n) => {
@@ -88,6 +90,7 @@ const forHex = () => {
   hexOut.innerHTML = hexToDec(inpOneVal);
   binOut.innerHTML = bin(hexToDec(inpOneVal));
   octOut.innerHTML = oct(hexToDec(inpOneVal));
+  return;
 };
 
 const octValidate = (n) => {
@@ -119,4 +122,5 @@ const forOct = () => {
   octOut.innerHTML = octToDec(inpOneVal);
   hexOut.innerHTML = hex(octToDec(inpOneVal));
   binOut.innerHTML = bin(octToDec(inpOneVal));
+  return;
 };

@@ -42,8 +42,8 @@ inputOne.addEventListener('input', calculate);
 selecter.addEventListener('change', calculate);
 
 resetOne.addEventListener('reset', () => {
-  selecter.addEventListener('reset', calculate);
-  inputOne.addEventListener('reset', calculate);
+  selecter.addEventListener('reset');
+  inputOne.addEventListener('reset');
   hexLab.addEventListener('reset');
   binLab.addEventListener('reset');
   octLab.addEventListener('reset');
