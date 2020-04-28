@@ -1,10 +1,10 @@
 const selecter = document.getElementById('selecter')
 const inputOne = document.getElementById('inputOne')
-// const inputTwo = document.getElementById('inputTwo')
+
 
 const outPutLab = document.getElementById('outPutlab')
 const error = document.getElementById('error')
-const convert = document.getElementById('convert')
+const convert = document.getElementById('convert').remove()
 const binOut = document.getElementById('bin')
 const octOut = document.getElementById('oct')
 const hexOut = document.getElementById('hex')
