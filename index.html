@@ -13,27 +13,34 @@
     </p>
     <div class="container">
       <div class="converter">
-        <select name="" id="converter-one">
+        <select name="" id="selecter">
           <option value="dec" selected>Decimal</option>
           <option value="bin">Binary</option>
-         
+          <option value="hex">Hexadecimal</option>
+          <option value="oct">Octadecimal</option>
         </select>
         <input type="number" id="inputOne" placeholder="0" value="" />
       </div>
       <div class="swap-converter">
-        <button class="btn" id="swap">Swap</button>
+        <button class="btn" id="convert">convert</button>
 
-        <div class="error" id="error"></div>
+        <div class="error" id="error">hello</div>
         <div id="value" class="value"></div>
       </div>
       <div class="converter">
-        <select name="" id="converter-two">
-          <option value="bin" selected>Binary</option>
-          <option value="dec">Decimal</option>
-        </select>
-        <input type="text" id="inputTwo" placeholder="0" />
+        <label for="hex" id="hexLab">Hexadecimal</label>
+        <textarea name="Hexadecimal" id="hex" disabled></textarea>
+      </div>
+      <div class="converter">
+        <label for="oct" id="octLab">Octadecimal</label>
+        <textarea name="Octadecimal" id="oct" disabled></textarea>
+      </div>
+      <div class="converter">
+        <label for="bin" id="binLab">Binary</label>
+        <textarea name="Binary" id="bin" disabled></textarea>
       </div>
     </div>
   </body>
-  <script src="script.js"></script>
+  <script src="./js/converter.js"></script>
+  <script src="./js/script.js"></script>
 </html>
