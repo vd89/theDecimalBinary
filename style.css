@@ -59,12 +59,12 @@ margin-bottom: 10px;
     text-align: right;
 }
 .converter textarea{
+    
     border: 1px solid #dedede;
     border-radius: 5px;
-    font-size: 25px;
+    font-size: 16px;
     text-align: right;
-    width: auto;
-    height: auto;
+
 }
 .converter label{
     padding: 10px 20px 10px 20px;
@@ -82,11 +82,7 @@ margin-bottom: 10px;
     align-items: center;
     justify-content: space-between;
 }
-.value{
-    color: var(--primary-color);
-    font-size: 18px;
-    padding: 0 10px;
-}
+
 .error{
     color: red;
     font-size: 18px;

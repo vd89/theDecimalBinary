@@ -2,10 +2,27 @@ const selecter = document.getElementById('selecter')
 const inputOne = document.getElementById('inputOne')
 // const inputTwo = document.getElementById('inputTwo')
 
-const value = document.getElementById('value')
+const outPutLab = document.getElementById('outPutlab')
 const error = document.getElementById('error')
 const convert = document.getElementById('convert')
+const binOut = document.getElementById('bin')
+const octOut = document.getElementById('oct')
+const hexOut = document.getElementById('hex')
+const binLab = document.getElementById('binLab')
 
+const calculate = () => {
+    var selecterVal = selecter.value
+    switch (selecterVal) {
+        case 'dec':
+            forDec()
+            break;
+        case 'bin':
+            forBin()
+            break
+        default:
+            break;
+    }
+}
 
 
 
@@ -13,17 +30,16 @@ const convert = document.getElementById('convert')
 // 
 //Event Listeners 
 inputOne.addEventListener('input',calculate)
-converterOne.addEventListener('change', calculate)
-converterTwo.addEventListener('change', calculate)
+selecter.addEventListener('change',calculate)
 
 // swap.style.display ='none'
 
-swap.addEventListener('click', () => {
-    const temp = converterOne.value
-    converterOne.value = converterTwo.value
-    converterTwo.value = temp
-    calculate()
-})
+// swap.addEventListener('click', () => {
+//     const temp = converterOne.value
+//     converterOne.value = converterTwo.value
+//     converterTwo.value = temp
+    
+// })
 
-calculate()
+
 
