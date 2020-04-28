@@ -1,6 +1,6 @@
 const selecter = document.getElementById('selecter')
 const inputOne = document.getElementById('inputOne')
-
+// const reset = document.getElementById('reset')
 
 const outPutLab = document.getElementById('outPutlab')
 const error = document.getElementById('error')
@@ -9,7 +9,8 @@ const binOut = document.getElementById('bin')
 const octOut = document.getElementById('oct')
 const hexOut = document.getElementById('hex')
 const binLab = document.getElementById('binLab')
-
+const hexLab = document.getElementById('hexLab')
+const octLab = document.getElementById('octLab')
 const calculate = () => {
     var selecterVal = selecter.value
     switch (selecterVal) {
@@ -17,14 +18,19 @@ const calculate = () => {
             forDec()
             break;
         case 'bin':
+            reset()
             forBin()
             break
         case 'hex':
             forHex()
             break;
+        case 'oct':
+            forOct()
+            break;
         default:
             break;
     }
+    return 
 }
 
 
@@ -33,16 +39,9 @@ const calculate = () => {
 // 
 //Event Listeners 
 inputOne.addEventListener('input',calculate)
-selecter.addEventListener('change',calculate)
 
-// swap.style.display ='none'
+selecter.addEventListener('change', calculate)
 
-// swap.addEventListener('click', () => {
-//     const temp = converterOne.value
-//     converterOne.value = converterTwo.value
-//     converterTwo.value = temp
-    
-// })
 
 
 

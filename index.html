@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 id="outPutlab">Decimal to Binary Calculator</h1>
+    <h1 id="outPutlab">Number converter</h1>
     <p>
       You can convert decimal value to Binary and then from Binary to Decimal
     </p>
     <div class="container">
       <div class="converter">
         <select name="" id="selecter">
-          <option value="dec" selected>Decimal</option>
-          <option value="bin">Binary</option>
+          <option value="dec" >Decimal</option>
+          <option value="bin" >Binary</option>
           <option value="hex">Hexadecimal</option>
           <option value="oct">Octadecimal</option>
         </select>
@@ -38,6 +38,7 @@
         <label for="bin" id="binLab">Binary</label>
         <textarea name="Binary" id="bin" cols="25" rows="5" disabled></textarea>
       </div>
+      <input type="reset" value="" id="reset" hidden>
     </div>
   </body>
   <script src="./js/converter.js"></script>
