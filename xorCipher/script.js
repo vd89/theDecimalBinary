@@ -1,6 +1,4 @@
-// window.onload = function () {
-//     inputFunc()
-// }
+
 function inputFunc() {
     var inputEnc = document.getElementById('inputEncrypt').value
     var inputKey = document.getElementById('inputKey').value
